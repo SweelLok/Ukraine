@@ -1,0 +1,141 @@
+:root {
+	--primary-color: #0057b7;
+	--secondary-color: #ffd700;
+	--dark-color: #333;
+	--light-color: #f4f4f4;
+	--success-color: #28a745;
+	--danger-color: #dc3545;
+}
+
+body {
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	line-height: 1.6;
+	color: var(--dark-color);
+}
+
+.navbar {
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand {
+	font-weight: 600;
+}
+
+.hero-section {
+	background-size: cover;
+	background-position: center;
+	height: 40vh;
+	position: relative;
+	color: white;
+	display: flex;
+	align-items: center;
+}
+
+.hero-content {
+	position: relative;
+	z-index: 2;
+}
+
+.overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.5);
+	z-index: 1;
+}
+
+.page-header {
+	height: 20vh;
+	background-size: cover;
+	background-position: center;
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.feature-box {
+	padding: 20px;
+	transition: transform 0.3s ease;
+}
+
+.feature-box:hover {
+	transform: translateY(-10px);
+}
+
+.feature-img {
+	width: 150px;
+	height: 150px;
+	object-fit: cover;
+	border: 5px solid var(--light-color);
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card {
+	transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+	transform: translateY(-5px);
+	box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1) !important;
+}
+
+.dish-img, .place-img {
+	height: 200px;
+	object-fit: cover;
+}
+
+.historical-img {
+	height: 180px;
+	object-fit: cover;
+}
+
+.team-img {
+	width: 120px;
+	height: 120px;
+	border-radius: 50%;
+	object-fit: cover;
+	border: 3px solid var(--primary-color);
+}
+
+.testimonial-img img {
+	width: 80px;
+	height: 80px;
+	border: 3px solid var(--primary-color);
+}
+
+footer a {
+	text-decoration: none;
+}
+
+footer a:hover {
+	text-decoration: underline;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+	.hero-section {
+			height: 60vh;
+	}
+	
+	.page-header {
+			height: 30vh;
+	}
+	
+	.feature-img {
+			width: 120px;
+			height: 120px;
+	}
+}
+
+@media (max-width: 576px) {
+	.hero-section {
+			height: 50vh;
+	}
+	
+	.page-header {
+			height: 25vh;
+	}
+}
